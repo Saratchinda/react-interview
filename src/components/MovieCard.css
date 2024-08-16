@@ -1,0 +1,79 @@
+.movie-card {
+    background-color: var(--card-background);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px var(--shadow-color);
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+    padding: 16px;
+}
+
+.movie-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px var(--hover-shadow-color);
+}
+
+.movie-title {
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: var(--text-color);
+    margin-top: 10px;
+}
+
+.movie-category {
+    color: var(--text-secondary-color);
+    margin-bottom: 10px;
+}
+
+.movie-image-container {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.movie-image {
+    width: 100%;
+    height: auto;
+    max-height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px var(--shadow-color);
+}
+
+.like-dislike-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.like-dislike {
+    display: flex;
+    align-items: center;
+    margin: 0 20px;
+}
+
+.count {
+    font-size: 1rem;
+    margin-left: 8px;
+    color: var(--text-color);
+}
+
+.like-active {
+    color: var(--primary-color);
+}
+
+.dislike-active {
+    color: var(--accent-color);
+}
+
+.delete-button {
+    color: var(--accent-color);
+    transition: color 0.3s;
+}
+
+.delete-button:hover {
+    color: darkred;
+}
+
+.MuiIconButton-root {
+    transition: color 0.3s;
+}

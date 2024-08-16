@@ -1,0 +1,145 @@
+:root {
+    --primary-color: #3498db; 
+    --secondary-color: #2ecc71; 
+    --accent-color: #e74c3c;   
+    --background-color: #f4f4f4; 
+    --card-background: #ffffff; 
+    --text-color: #333333; 
+    --text-secondary-color: #7f8c8d; 
+    --shadow-color: rgba(0, 0, 0, 0.1); 
+    --hover-shadow-color: rgba(0, 0, 0, 0.2); 
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--background-color);
+    margin: 0;
+    padding: 20px;
+    color: var(--text-color);
+}
+
+.App {
+    text-align: center;
+}
+
+h1 {
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+
+.movie-card {
+    background-color: var(--card-background);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px var(--shadow-color);
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+    padding: 16px;
+    margin: 10px; 
+}
+
+.movie-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px var(--hover-shadow-color);
+}
+
+.movie-title {
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: var(--text-color);
+    margin-top: 10px;
+}
+
+.movie-category {
+    color: var(--text-secondary-color);
+    margin-bottom: 10px;
+}
+
+.movie-image-container {
+    text-align: center; 
+    margin-bottom: 10px; 
+}
+
+.movie-image {
+    width: 100%; 
+    height: auto; 
+    max-height: 180px; 
+    object-fit: cover; 
+    border-radius: 8px; 
+    box-shadow: 0 2px 4px var(--shadow-color); 
+}
+
+.like-dislike-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.like-dislike {
+    display: flex;
+    align-items: center;
+    margin: 0 20px;
+}
+
+.count {
+    font-size: 1rem;
+    margin-left: 8px;
+    color: var(--text-color);
+}
+
+.delete-button {
+    color: var(--accent-color);
+    transition: color 0.3s;
+}
+
+.delete-button:hover {
+    color: darkred;
+}
+
+.MuiIconButton-root {
+    color: var(--primary-color);
+    transition: color 0.3s;
+}
+
+.MuiIconButton-root:hover {
+    color: var(--secondary-color);
+}
+
+.MuiPagination-root {
+    margin-top: 20px;
+}
+
+.MuiFormControl-root {
+    margin-left: 20px;
+}
+
+.MuiFormGroup-root {
+    margin: 20px 0;
+}
+
+.MuiFormControlLabel-root {
+    margin: 0 10px;
+}
+
+.MuiButton-root {
+    background-color: var(--primary-color);
+    color: #fff;
+    border-radius: 4px;
+    padding: 10px 20px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.MuiButton-root:hover {
+    background-color: var(--secondary-color);
+    color: #fff;
+}
+
+.movie-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.filter-container {
+    margin-bottom: 20px;
+}

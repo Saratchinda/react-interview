@@ -1,0 +1,41 @@
+.modal-content {
+    position: relative;
+    padding: 0;
+    background-color: var(--background-color);
+}
+
+.modal-close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: var(--text-color);
+}
+
+.modal-image-container {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.modal-image {
+    width: 100%;
+    height: auto;
+    max-height: 150vh; 
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.modal-details {
+    text-align: center;
+    padding: 20px;
+}
+
+.modal-title {
+    font-size: 2rem;
+    color: var(--text-color);
+    margin: 10px 0;
+}
+
+.modal-category {
+    color: var(--text-secondary-color);
+    margin: 10px 0;
+}
